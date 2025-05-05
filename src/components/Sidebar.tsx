@@ -37,7 +37,6 @@ const Sidebar = () => {
       isCollapsed 
         ? "sm:w-20 md:w-30 " // narrow on mobile when collapsed, slightly wider on medium and large screens
         : "sm:w-64 md:w-64 ", // wide on mobile when open, same on medium and large screens
-      "max-sm:w-20" // ensures it stays thin when collapsed on mobile (max-sm = below 640px)
     )}>
     
     
