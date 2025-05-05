@@ -36,7 +36,7 @@ const Sidebar = () => {
       "bg-connect-primary border-r h-screen transition-all duration-300 flex flex-col fixed top-0 left-0 z-50",
       isCollapsed ? "md:w-30" : "md:w-64",
       "sm:w-20", // optional for slightly wider default on small screens
-      "max-sm:w-14" // thinner sidebar on mobile (max-sm = below 640px)
+      "max-sm:w-25" // thinner sidebar on mobile (max-sm = below 640px)
     )}>
     
       <div className="flex items-center justify-between p-4 border-b border-gray-200/20">
