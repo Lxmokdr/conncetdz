@@ -1,16 +1,14 @@
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
-        <div className="bg-connect-primary text-white py-16 md:py-24">
+        <div className="bg-gradient-to-br from-connect-primary via-connect-secondary to-connect-accent text-white py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">About Connect DZ</h1>
@@ -100,7 +98,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg overflow-hidden shadow-sm">
               <img 
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
@@ -108,29 +106,15 @@ const About = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
-                <h3 className="font-bold text-xl mb-1">Leila Benali</h3>
-                <p className="text-connect-primary mb-3">Founder & CEO</p>
+                <h3 className="font-bold text-xl mb-1">Lamia KOUDRI</h3>
+                <p className="text-connect-primary mb-3">Co-Founder & Developper</p>
                 <p className="text-gray-600">
-                  Former education specialist with 15 years of experience in workforce development programs.
+                  Data Science and Ai Engineer and passionate web and mobile app developper.
                 </p>
               </div>
             </div>
-            
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-              <img 
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
-                alt="Team member" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="font-bold text-xl mb-1">Ahmed Kader</h3>
-                <p className="text-connect-primary mb-3">CTO</p>
-                <p className="text-gray-600">
-                  Tech entrepreneur with a passion for creating digital solutions to social challenges.
-                </p>
-              </div>
-            </div>
-            
+  
+
             <div className="bg-white rounded-lg overflow-hidden shadow-sm">
               <img 
                 src="https://images.unsplash.com/photo-1483058712412-4245e9b90334" 
@@ -138,13 +122,44 @@ const About = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
-                <h3 className="font-bold text-xl mb-1">Sofiane Hamdi</h3>
-                <p className="text-connect-primary mb-3">Partnerships Director</p>
+                <h3 className="font-bold text-xl mb-1">Manar BOURAS</h3>
+                <p className="text-connect-primary mb-3">Co-Founder & Partnerships and Marketing Director</p>
                 <p className="text-gray-600">
                   Former government liaison with extensive connections in public and private sectors.
                 </p>
               </div>
             </div>
+
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
+                alt="Team member" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="font-bold text-xl mb-1">Raihana Hiba BOURAY</h3>
+                <p className="text-connect-primary mb-3">CTO</p>
+                <p className="text-gray-600">
+                  Tech entrepreneur with a passion for creating digital solutions to social challenges.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
+                alt="Team member" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="font-bold text-xl mb-1">Iskender Abdelhamid YAHIAOUI</h3>
+                <p className="text-connect-primary mb-3">Co-Fouder & Directeur Stratégique et Marketting</p>
+                <p className="text-gray-600">
+                  Business Development and Marketing expert with a focus on innovation and growth.
+                </p>
+              </div>
+            </div>
+
           </div>
           
           <div className="text-center mt-12">
@@ -158,7 +173,7 @@ const About = () => {
         </section>
         
         {/* Call to Action */}
-        <section className="section-padding bg-gradient-to-r from-connect-primary to-blue-700 text-white">
+        <section className="section-padding bg-gradient-to-br from-connect-primary via-connect-secondary to-connect-accent text-white">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Join Our Mission</h2>
             <p className="text-lg opacity-90 mb-8">
@@ -175,7 +190,6 @@ const About = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

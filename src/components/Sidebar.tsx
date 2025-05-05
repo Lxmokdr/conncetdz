@@ -33,17 +33,20 @@ const Sidebar = () => {
 
   return (
     <div className={cn(
-      "bg-connect-primary border-r border-gray-200 h-screen transition-all duration-300 flex flex-col",
-      isCollapsed ? "w-20" : "w-64"
+      "bg-connect-primary border-r h-screen transition-all duration-300 flex flex-col fixed top-0 left-0 z-50",
+      isCollapsed ? "md:w-30" : "md:w-64",
+      "sm:w-20", // optional for slightly wider default on small screens
+      "max-sm:w-14" // thinner sidebar on mobile (max-sm = below 640px)
     )}>
+    
       <div className="flex items-center justify-between p-4 border-b border-gray-200/20">
         <Link to="/" className="flex items-center">
           {isCollapsed ? (
             <div className="flex justify-center w-full">
               <img 
-                src="/lovable-uploads/415376fc-2da4-49b6-b559-be3cd353d66b.png" 
+                src="/lovable-uploads/logoconnect-dzcutlight.png" 
                 alt="ConnectDZ Logo" 
-                className="h-10 w-auto" 
+                className="h-15" 
               />
             </div>
           ) : (

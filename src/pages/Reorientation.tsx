@@ -9,7 +9,7 @@ const Reorientation = () => {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         {/* Hero Section */}
-        <div className="bg-connect-primary text-white py-16 md:py-24">
+        <div className="bg-gradient-to-br from-connect-primary via-connect-secondary to-connect-accent text-white py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Career Switch Support</h1>

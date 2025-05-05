@@ -28,7 +28,7 @@ const Hero = () => {
               <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-connect-accent to-connect-primary opacity-30 blur"></div>
               <div className="relative bg-white p-6 rounded-lg shadow-xl">
                 <div className="flex justify-center mb-6">
-                  <img src="/lovable-uploads/415376fc-2da4-49b6-b559-be3cd353d66b.png" alt="ConnectDZ Logo" className="h-16" />
+                  <img src="lovable-uploads\d48910a0-7a2f-41a2-bfc1-d08ac6273e2b.png" alt="ConnectDZ Logo" className="h-16" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Find Your Path</h3>
                 <div className="space-y-3">

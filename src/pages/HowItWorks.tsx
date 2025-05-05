@@ -1,16 +1,13 @@
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const HowItWorks = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
-        <div className="bg-connect-primary text-white py-16 md:py-24">
+        <div className="bg-gradient-to-br from-connect-primary via-connect-secondary to-connect-accent text-white py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">How Connect DZ Works</h1>
@@ -249,7 +246,6 @@ const HowItWorks = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };
