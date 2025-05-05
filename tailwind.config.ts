@@ -65,11 +65,11 @@ export default {
 				},
 				// Connect DZ Theme Colors
 				connect: {
-					primary: '#0056b3',
-					secondary: '#28a745',
-					accent: '#dc3545',
-					light: '#f8f9fa',
-					dark: '#343a40'
+					primary: '#6b46c1', // Purple
+					secondary: '#9f7aea', // Light Purple
+					accent: '#d6bcfa',   // Very Light Purple
+					light: '#f8f9fa',    // Light background
+					dark: '#44337a'      // Dark Purple
 				}
 			},
 			borderRadius: {
