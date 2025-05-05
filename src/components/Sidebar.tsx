@@ -35,7 +35,7 @@ const Sidebar = () => {
     <div className={cn(
       "bg-connect-primary border-r h-screen transition-all duration-300 flex flex-col fixed top-0 left-0 z-50",
       isCollapsed 
-        ? "sm:w-20 md:w-30 " // narrow on mobile when collapsed, slightly wider on medium and large screens
+        ? "sm:w-5 md:w-30 " // narrow on mobile when collapsed, slightly wider on medium and large screens
         : "sm:w-64 md:w-64 ", // wide on mobile when open, same on medium and large screens
     )}>
     
