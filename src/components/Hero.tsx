@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="hero-gradient text-white">
+    <div className="bg-gradient-to-br from-connect-primary via-connect-secondary to-connect-accent text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-up">
@@ -25,8 +25,11 @@ const Hero = () => {
           </div>
           <div className="hidden md:block animate-fade-in">
             <div className="relative">
-              <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-connect-secondary to-connect-primary opacity-30 blur"></div>
+              <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-connect-accent to-connect-primary opacity-30 blur"></div>
               <div className="relative bg-white p-6 rounded-lg shadow-xl">
+                <div className="flex justify-center mb-6">
+                  <img src="/lovable-uploads/415376fc-2da4-49b6-b559-be3cd353d66b.png" alt="ConnectDZ Logo" className="h-16" />
+                </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Find Your Path</h3>
                 <div className="space-y-3">
                   <Link to="/under-18" className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-gray-800">
@@ -66,8 +69,8 @@ const Hero = () => {
                   </Link>
                   
                   <Link to="/reorientation" className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-gray-800">
-                    <div className="bg-blue-100 p-2 rounded-full mr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="bg-connect-accent/10 p-2 rounded-full mr-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-connect-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                       </svg>
                     </div>

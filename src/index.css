@@ -82,7 +82,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans overflow-x-hidden;
   }
   
   .section-padding {
@@ -90,10 +90,35 @@
   }
   
   .hero-gradient {
-    background: linear-gradient(135deg, #47276C 0%, #6b46c1 100%);
+    background: linear-gradient(135deg, #47276C 0%, #7E69AB 50%, #D6BCFA 100%);
   }
   
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Custom content layout for pages */
+  .content-container {
+    @apply ml-0 w-full transition-all duration-300;
+  }
+
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .sidebar-open .content-container {
+      @apply ml-64 w-[calc(100%-16rem)];
+    }
+    
+    .sidebar-closed .content-container {
+      @apply ml-20 w-[calc(100%-5rem)];
+    }
+  }
+
+  /* Gradients and backgrounds */
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-connect-primary to-connect-secondary;
+  }
+  
+  .bg-gradient-accent {
+    @apply bg-gradient-to-r from-connect-secondary to-connect-accent;
   }
 }
