@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,11 +64,11 @@ export default {
 				},
 				// Connect DZ Theme Colors
 				connect: {
-					primary: '#6b46c1', // Purple
-					secondary: '#9f7aea', // Light Purple
-					accent: '#d6bcfa',   // Very Light Purple
+					primary: '#47276C', // Dark Purple
+					secondary: '#6b46c1', // Medium Purple
+					accent: '#9f7aea',   // Light Purple
 					light: '#f8f9fa',    // Light background
-					dark: '#44337a'      // Dark Purple
+					dark: '#2d1a46'      // Darker Purple
 				}
 			},
 			borderRadius: {
