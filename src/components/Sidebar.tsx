@@ -33,21 +33,30 @@ const Sidebar = () => {
 
   return (
     <div className={cn(
-      "bg-white border-r border-gray-200 h-screen transition-all duration-300 flex flex-col",
+      "bg-connect-primary border-r border-gray-200 h-screen transition-all duration-300 flex flex-col",
       isCollapsed ? "w-20" : "w-64"
     )}>
-      <div className="flex items-center justify-between p-4 border-b border-gray-200">
+      <div className="flex items-center justify-between p-4 border-b border-gray-200/20">
         <Link to="/" className="flex items-center">
           {isCollapsed ? (
-            <img src="/lovable-uploads/415376fc-2da4-49b6-b559-be3cd353d66b.png" alt="ConnectDZ Logo" className="h-10" />
+            <div className="flex justify-center w-full">
+              <img 
+                src="/lovable-uploads/d48910a0-7a2f-41a2-bfc1-d08ac6273e2b.png" 
+                alt="ConnectDZ Logo" 
+                className="h-10 w-auto" 
+              />
+            </div>
           ) : (
-            <div className="flex items-center space-x-2">
-              <img src="/lovable-uploads/415376fc-2da4-49b6-b559-be3cd353d66b.png" alt="ConnectDZ Logo" className="h-14" />
-              <span className="font-semibold text-connect-primary text-lg">ConnectDZ</span>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/d48910a0-7a2f-41a2-bfc1-d08ac6273e2b.png" 
+                alt="ConnectDZ Logo" 
+                className="h-14 w-auto" 
+              />
             </div>
           )}
         </Link>
-        <Button variant="ghost" size="icon" onClick={toggleSidebar} className="rounded-full">
+        <Button variant="ghost" size="icon" onClick={toggleSidebar} className="rounded-full text-white hover:bg-connect-primary/80">
           <Menu size={20} />
         </Button>
       </div>
@@ -59,8 +68,8 @@ const Sidebar = () => {
               <Link
                 to={item.path === '#' ? '#' : item.path}
                 className={cn(
-                  "flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-connect-accent/10 hover:text-connect-primary transition-colors",
-                  location.pathname === item.path && "bg-connect-accent/20 text-connect-primary font-medium",
+                  "flex items-center px-3 py-2 rounded-md text-white hover:bg-connect-accent/10 hover:text-connect-accent transition-colors",
+                  location.pathname === item.path && "bg-connect-accent/20 text-connect-accent font-medium",
                   isCollapsed && "justify-center"
                 )}
               >
@@ -75,8 +84,8 @@ const Sidebar = () => {
                       <Link
                         to={subItem.path}
                         className={cn(
-                          "flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-connect-accent/10 hover:text-connect-primary transition-colors text-sm",
-                          location.pathname === subItem.path && "bg-connect-accent/20 text-connect-primary font-medium"
+                          "flex items-center px-3 py-2 rounded-md text-white hover:bg-connect-accent/10 hover:text-connect-accent transition-colors text-sm",
+                          location.pathname === subItem.path && "bg-connect-accent/20 text-connect-accent font-medium"
                         )}
                       >
                         <span>{subItem.label}</span>
@@ -91,10 +100,10 @@ const Sidebar = () => {
       </div>
 
       <div className={cn(
-        "p-4 border-t border-gray-200",
+        "p-4 border-t border-gray-200/20",
         isCollapsed ? "text-center" : ""
       )}>
-        <Button className="bg-connect-primary hover:bg-connect-secondary w-full">
+        <Button className="bg-connect-accent hover:bg-connect-accent/80 text-white w-full">
           {isCollapsed ? "Get" : "Get Started"}
         </Button>
       </div>
