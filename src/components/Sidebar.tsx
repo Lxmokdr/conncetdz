@@ -41,7 +41,7 @@ const Sidebar = () => {
           {isCollapsed ? (
             <div className="flex justify-center w-full">
               <img 
-                src="/lovable-uploads/d48910a0-7a2f-41a2-bfc1-d08ac6273e2b.png" 
+                src="/lovable-uploads/415376fc-2da4-49b6-b559-be3cd353d66b.png" 
                 alt="ConnectDZ Logo" 
                 className="h-10 w-auto" 
               />
@@ -49,7 +49,7 @@ const Sidebar = () => {
           ) : (
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/d48910a0-7a2f-41a2-bfc1-d08ac6273e2b.png" 
+                src="/lovable-uploads/415376fc-2da4-49b6-b559-be3cd353d66b.png" 
                 alt="ConnectDZ Logo" 
                 className="h-14 w-auto" 
               />
