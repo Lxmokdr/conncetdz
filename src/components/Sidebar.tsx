@@ -6,7 +6,7 @@ import { Home, Info, HelpCircle, Users, Menu, List } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const location = useLocation();
 
   const toggleSidebar = () => {
